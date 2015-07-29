@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#000</color>
+    <color name="dark_gray">#373737</color>
+    <color name="drawer_divider">#AAA</color>
+    <color name="color_primary">#FF0000</color>
+    <color name="color_primary_dark">#CC0000</color>
+</resources>
