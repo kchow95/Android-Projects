@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3f374f"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/create"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="40dp"
+        android:background="#00000000"
+        android:scaleType="fitXY"
+        android:src="@drawable/creategame" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/create"
+        android:layout_below="@+id/create"
+        android:text="@string/create_game"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/purple" />
+
+    <ImageButton
+        android:id="@+id/join"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:layout_above="@+id/textView2"
+        android:layout_marginLeft="37dp"
+        android:layout_toRightOf="@+id/textView2"
+        android:background="#00000000"
+        android:scaleType="fitXY"
+        android:src="@drawable/joingame" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/join"
+        android:layout_below="@+id/join"
+        android:text="@string/join_game"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:textColor="@color/bluee"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/create"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="77dp"
+        android:text="@string/app_name"
+        android:textColor="#FFFFFF"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
