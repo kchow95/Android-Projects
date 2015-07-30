@@ -8,11 +8,14 @@ import android.content.Intent;
 import android.media.RingtoneManager;
 import android.net.Uri;
 import android.support.v4.app.NotificationCompat;
+import android.util.Log;
 
 /**
  * Created by kchow95 on 7/29/15.
  */
 public class AlarmReceiver extends BroadcastReceiver {
+
+    private static final String TAG = "Test";
 
 
     @Override
@@ -32,6 +35,7 @@ public class AlarmReceiver extends BroadcastReceiver {
                 notificationIntent, PendingIntent.FLAG_UPDATE_CURRENT);
 
 
+        Log.i(TAG, "alarm");
         Uri alarmSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
 
         NotificationCompat.Builder mNotifyBuilder = new NotificationCompat.Builder(

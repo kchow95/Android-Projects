@@ -3,4 +3,7 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_enter_task">EnterTaskActivity</string>
+    <string name="enter_task">Enter task name</string>
+    <string name="add_message">Add reminder message</string>
 </resources>

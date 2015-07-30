@@ -15,6 +15,7 @@
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:src="@drawable/ic_create_white_24dp"
+        android:adjustViewBounds="true"
         android:background="@drawable/floating_aciton_button"
         android:id="@+id/imageButton"
         android:layout_alignParentBottom="true"

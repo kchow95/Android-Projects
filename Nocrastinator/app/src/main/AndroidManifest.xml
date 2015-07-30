@@ -2,11 +2,17 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="chow.nocrastinator" >
 
+    <!-- permission required to use Alarm Manager -->
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+
+    <!-- Register the Alarm Receiver -->
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+        <receiver android:name=".AlarmReceiver" />
+
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name" >
@@ -15,6 +21,10 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".EnterTaskActivity"
+            android:label="@string/title_activity_enter_task" >
         </activity>
     </application>
 

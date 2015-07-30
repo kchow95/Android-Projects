@@ -8,7 +8,7 @@ import java.util.Calendar;
 public class Task {
     private String name, message;
     private Calendar startTime, endTime;
-    private int duration;
+    private int interval;
 
     public String getName() {
         return name;
@@ -42,11 +42,11 @@ public class Task {
         this.endTime = endTime;
     }
 
-    public int getDuration() {
-        return duration;
+    public int getInterval() {
+        return interval;
     }
 
-    public void setDuration(int duration) {
-        this.duration = duration;
+    public void getInterval(int duration) {
+        this.interval = duration;
     }
 }
