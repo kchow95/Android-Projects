@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/qfirstscreen"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="cns.utexas.QProject.FirstScreen" >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="99dp"
+        android:adjustViewBounds="false"
+        android:maxHeight="80dp"
+        android:maxWidth="80dp"
+        android:src="@drawable/qapplogo" />
+
+    <Button
+        android:id="@+id/join_party_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/start_party_button"
+        android:layout_alignRight="@+id/start_party_button"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/androidbutton"
+        android:text="@string/join_party"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/start_party_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/join_party_button"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/androidbutton"
+        android:text="@string/partystart"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

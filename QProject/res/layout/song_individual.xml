@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/album_cover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:maxHeight="80dp"
+        android:maxWidth="80dp"
+        android:src="@drawable/q" />
+
+    <TextView
+        android:id="@+id/song_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/album_cover"
+        android:text="@string/song_title"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/artist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/song_name"
+        android:layout_toRightOf="@+id/album_cover"
+        android:text="Artist"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageButton
+        android:id="@+id/vote_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/artist"
+        android:adjustViewBounds="true"
+        android:background="@drawable/buttonbg"
+        android:maxHeight="40dp"
+        android:maxWidth="40dp"
+        android:src="@drawable/thumbsdown" />
+
+    <ImageButton
+        android:id="@+id/vote_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/vote_down"
+        android:layout_marginRight="14dp"
+        android:layout_toLeftOf="@+id/vote_down"
+        android:adjustViewBounds="true"
+        android:background="@drawable/buttonbg"
+        android:cropToPadding="false"
+        android:focusable="false"
+        android:maxHeight="80dp"
+        android:maxWidth="80dp"
+        android:src="@drawable/thumbsup" />
+
+    <TextView
+        android:id="@+id/up_count"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_alignBaseline="@+id/down_count"
+        android:layout_alignBottom="@+id/down_count"
+        android:layout_alignLeft="@+id/vote_up"
+        android:text="#"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/down_count"
+        android:layout_width="10dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/vote_down"
+        android:layout_below="@+id/vote_down"
+        android:text="#"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>
